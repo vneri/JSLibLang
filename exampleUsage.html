@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>JSLibLang Example</title>
+        <!-- Scripts-->
+        <script src="js/lib_lang.js"></script>
+        <script src="js/lang_en.js"></script>
+        <script src="js/lang_it.js"></script>
+        <script>
+            // let's fix the language, otherwise the system language is taken
+            lib_lang.setLang('en');
+        </script>
+    </head>
+    <body>
+        <h1 data-lang="title"></h5>
+        <input type="button" data-lang-type="value" data-lang="buttonText" />
+        <br>
+        <br>
+        <select onchange="javascript:lib_lang.changeLang(this.value)">
+            <option value="en" selected="selected">EN</option>
+            <option value="it">IT</option>
+        </select>
+    </body>
+</html>
